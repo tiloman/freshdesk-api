@@ -1,4 +1,5 @@
-require "freshdesk/api/version"
+# frozen_string_literal: true
+require 'freshdesk/api/version'
 
 module Freshdesk
   module Api
