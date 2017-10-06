@@ -1,8 +1,6 @@
 # Freshdesk::Api
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/freshdesk/api`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Yet another freshdesk api wrapper.
 
 ## Installation
 
@@ -22,7 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Configure the gem. Eg. in a rails initializer.
+
+```ruby
+  Freshdesk::Api.configure do |config|
+    config.api_key = 'your_api_key'
+    config.domain  = 'your_namespace' # like YOUR_NAMESPACE.freshdesk.com
+  end
+```
+
+After that, you will have access to classes these classes:
+
+```ruby
+  Freshdesk::Api::Company
+  Freshdesk::Api::Contact
+  Freshdesk::Api::Ticket
+```
+
+Use them [like this](https://github.com/rails/activeresource#find). Shouldn't be a problem, if you're familiar with `ActiveModel`.
 
 ## Development
 
