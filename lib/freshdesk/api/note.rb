@@ -8,7 +8,7 @@ module Freshdesk
       schema do
         attribute 'id', :integer
         attribute 'body', :string
-        attribute 'ticket_id', integer
+        attribute 'ticket_id', :integer
       end
     end
   end
