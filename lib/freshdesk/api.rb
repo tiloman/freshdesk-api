@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'activeresource'
+require 'ext/active_resource/connection'
+require 'ext/active_resource/validations'
 
 module Freshdesk
   module Api
