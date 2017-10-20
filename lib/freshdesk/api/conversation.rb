@@ -6,6 +6,13 @@ module Freshdesk
       self.prefix = '/api/v2/tickets/:ticket_id/'
       belongs_to :ticket, class_name: 'Freshdesk::Api::Ticket'
 
+      class << self
+        def create(*args)
+          self.collection_name = 'notes'
+          super
+        end
+      end
+
       schema do
         attribute 'id', :integer
         attribute 'body', :string
