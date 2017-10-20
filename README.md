@@ -20,6 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
+In order to use this via `bin/console` simply copy `.env.example` to `.env` and fill in your credentials.
+
 Configure the gem. Eg. in a rails initializer.
 
 ```ruby
