@@ -2,8 +2,20 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+require 'dotenv/load'
+require 'http_logger'
 
 require 'freshdesk/api'
+
+if ENV['FRESHDESK_API_KEY'] && ENV['FRESHDESK_DOMAIN']
+  Freshdesk::Api.configure do |config|
+    config.api_key = ENV['FRESHDESK_API_KEY']
+    config.domain  = ENV['FRESHDESK_DOMAIN']
+  end
+end
+
+HttpLogger.logger = Logger.new(STDOUT)
+HttpLogger.colorize = true
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.

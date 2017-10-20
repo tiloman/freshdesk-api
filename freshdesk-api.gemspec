@@ -33,6 +33,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'byebug'
+  spec.add_development_dependency 'dotenv'
+  spec.add_development_dependency 'http_logger'
 
   spec.add_dependency 'activeresource', '~> 5.0'
 end

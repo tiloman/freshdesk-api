@@ -4,7 +4,7 @@ module Freshdesk
   module Api
     class Ticket < Base
       belongs_to :company, class_name: 'Freshdesk::Api::Company'
-      has_many :notes, class_name: 'Freshdesk::Api::Note'
+      has_many :conversations, class_name: 'Freshdesk::Api::Conversation'
 
       schema do
         attribute 'id', :integer
