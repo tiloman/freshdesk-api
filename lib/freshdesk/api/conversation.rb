@@ -3,7 +3,7 @@
 module Freshdesk
   module Api
     class Conversation < Base
-      self.prefix = "/api/v2/tickets/:ticket_id/"
+      self.prefix = '/api/v2/tickets/:ticket_id/'
       belongs_to :ticket, class_name: 'Freshdesk::Api::Ticket'
 
       schema do
