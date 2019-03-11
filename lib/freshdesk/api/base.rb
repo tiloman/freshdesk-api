@@ -10,6 +10,10 @@ module Freshdesk
           self.password = 'X'
         end
       end
+
+      def as_json(opts = {})
+        super({ except: %i[id facebook_id created_at updated_at] }.merge(opts))
+      end
     end
   end
 end
