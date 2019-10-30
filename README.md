@@ -37,6 +37,8 @@ After that, you will have access to classes these classes:
   Freshdesk::Api::Company
   Freshdesk::Api::Contact
   Freshdesk::Api::Ticket
+  Freshdesk::Api::Agent
+  Freshdesk::Api::Group
 ```
 
 Use them [like this](https://github.com/rails/activeresource#find). Shouldn't be a problem, if you're familiar with `ActiveModel`.
