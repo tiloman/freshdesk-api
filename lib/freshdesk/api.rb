@@ -29,6 +29,8 @@ end
 require 'freshdesk/api/version'
 require 'freshdesk/api/configuration'
 require 'freshdesk/api/base'
+require 'freshdesk/api/group'
+require 'freshdesk/api/agent'
 require 'freshdesk/api/company'
 require 'freshdesk/api/contact'
 require 'freshdesk/api/ticket'
