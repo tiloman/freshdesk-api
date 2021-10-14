@@ -18,7 +18,7 @@ module Freshdesk
       end
 
       def as_json(opts = {})
-        super({ except: %i[id facebook_id created_at updated_at] }.merge(opts)).compact.each { |_, v| v.compact! }
+        super({ except: %i[id facebook_id created_at updated_at] }.merge(opts)).compact.each { |_, v| v.compact! if v.respond_to?(:compact!)}
       end
     end
   end
