@@ -37,5 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'http_logger'
   spec.add_development_dependency 'rubocop'
 
-  spec.add_dependency 'activeresource', '~> 5.1.1'
+  spec.add_dependency 'activeresource', '~> 6.0'
 end
