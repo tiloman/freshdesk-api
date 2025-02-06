@@ -40,5 +40,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop'
 
   spec.add_dependency 'activeresource'
-  spec.add_dependency 'activemodel', '~> 8.0'
 end
